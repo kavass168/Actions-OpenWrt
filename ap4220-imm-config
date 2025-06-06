@@ -1,0 +1,74 @@
+#
+# Automatically generated file; DO NOT EDIT.
+# LEDE Configuration WJ AP4220
+#
+CONFIG_TARGET_ipq40xx=y
+CONFIG_TARGET_ipq40xx_generic=y
+CONFIG_TARGET_ipq40xx_generic_DEVICE_alibaba_ap4220-128m=y
+CONFIG_HAS_SUBTARGETS=y
+CONFIG_HAS_DEVICES=y
+CONFIG_TARGET_BOARD="ipq40xx"
+CONFIG_TARGET_SUBTARGET="generic"
+CONFIG_TARGET_PROFILE="DEVICE_alibaba_ap4220-128m"
+
+CONFIG_HAS_FPU=y
+CONFIG_AUDIO_SUPPORT=y
+CONFIG_GPIO_SUPPORT=y
+CONFIG_PCI_SUPPORT=y
+CONFIG_PCIE_SUPPORT=y
+CONFIG_USB_SUPPORT=y
+CONFIG_RTC_SUPPORT=y
+CONFIG_USES_DEVICETREE=y
+CONFIG_USES_INITRAMFS=y
+CONFIG_USES_SQUASHFS=y
+CONFIG_EMMC_SUPPORT=y
+CONFIG_NAND_SUPPORT=y
+
+#
+# Target Images
+#
+CONFIG_TARGET_ROOTFS_INITRAMFS=y
+CONFIG_TARGET_INITRAMFS_COMPRESSION_NONE=y
+CONFIG_EXTERNAL_CPIO=""
+
+# 固件压缩:
+CONFIG_TARGET_IMAGES_GZIP=y
+
+# ath10k Board-Specific Overrides
+CONFIG_PACKAGE_ipq-wifi-alibaba_ap4220=y
+CONFIG_PACKAGE_ath10k-board-qca4019=y
+CONFIG_PACKAGE_ath10k-firmware-qca4019-ct=y
+CONFIG_PACKAGE_wireless-regdb=y
+
+# 3. Applications
+#
+CONFIG_PACKAGE_luci-app-autoreboot=y
+CONFIG_PACKAGE_luci-app-cpufreq=y
+CONFIG_PACKAGE_luci-app-diskman=y
+CONFIG_PACKAGE_luci-app-diskman_INCLUDE_btrfs_progs=y
+CONFIG_PACKAGE_luci-app-diskman_INCLUDE_lsblk=y
+CONFIG_PACKAGE_luci-app-filetransfer=y
+CONFIG_PACKAGE_luci-app-firewall=y
+CONFIG_PACKAGE_luci-app-nlbwmon=y
+CONFIG_PACKAGE_luci-app-opkg=y
+CONFIG_PACKAGE_luci-app-ttyd=y
+
+
+#
+# LuCI主题
+#
+CONFIG_PACKAGE_luci-theme-argon=y
+CONFIG_PACKAGE_luci-theme-bootstrap=y
+
+
+#del package ==========================================================================================================
+CONFIG_PACKAGE_luci-app-ssr-plus=n
+CONFIG_PACKAGE_luci-app-vlmcsd=n
+CONFIG_PACKAGE_luci-app-vsftpd=n
+CONFIG_DEFAULT_luci-app-ddns=n
+CONFIG_PACKAGE_luci-app-turboacc=n
+#wj ===================================================================================================================
+CONFIG_PACKAGE_luci-app-dawn=y
+CONFIG_PACKAGE_dawn=y
+
+# end 
