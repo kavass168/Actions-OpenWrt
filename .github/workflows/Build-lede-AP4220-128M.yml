@@ -17,8 +17,10 @@ on:
   workflow_dispatch:
 
 env:
-  REPO_URL: https://github.com/coolsnowwolf/lede
-  REPO_BRANCH: master
+  REPO_URL: https://github.com/kavass168/immortalwrt-V
+  REPO_BRANCH: AP4220
+  #REPO_URL: https://github.com/coolsnowwolf/lede
+  #REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: AP4220-128M-WJ.config
   DIY_P1_SH: diy-part1.sh
